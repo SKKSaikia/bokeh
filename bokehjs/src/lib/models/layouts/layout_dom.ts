@@ -13,7 +13,7 @@ export namespace LayoutDOMView {
   export type Options = DOMView.Options & {model: LayoutDOM}
 }
 
-export abstract class LayoutDOMView extends DOMView {
+export abstract class LayoutDOMView extends DOMView implements EventListenerObject {
   model: LayoutDOM
 
   root: LayoutDOMView
